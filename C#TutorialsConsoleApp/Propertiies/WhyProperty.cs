@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//to avoid from making class files publically we use properties like get and set methods
+// by making them private no one can access them directly
 
 namespace C_TutorialsConsoleApp.Propertiies
 {
@@ -11,6 +9,7 @@ namespace C_TutorialsConsoleApp.Propertiies
         private int _id;
         private string _Name;
         private int _passMark = 35;
+        //using the get method and set method
         public int GetPassMark()
         {
             return this._passMark;

@@ -50,7 +50,7 @@ namespace C_TutorialsConsoleApp.Basics
             {
 
                 Console.WriteLine("Please eneter a valin no.");
-                Console.WriteLine("Please dfeneter a valin no.");
+                
             }
         }
     }

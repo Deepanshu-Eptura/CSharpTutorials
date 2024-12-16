@@ -9,17 +9,23 @@ If a class or a struct inherits from an interface, it must provide implementatio
 A class or a struct can inherit from more than one interface at the same time, but where as, a clas cannot inherit from more than once class at the same time.
 Interfaces can inherit from other interfaces. A class that inherits this interface must provide implementation for all interface members in the entire interface inheritance chain.
 We cannot create an instance of an interface, but an interface reference variable can point to a derived class object.
-Interface Naming Convention: Interface names are prefixed with capital I.*/
+Interface Naming Convention: Interface names are prefixed with capital I.
+>>> ( A class can inherit multiple interface.)
+ */
 
 namespace C_TutorialsConsoleApp
 {
     public interface Drawable
     {
-        void draw(); //interface members are public by default
+      //interface members are public by default,thry cant have access modifier, complioer will give error
+        void draw(); // implementation cant de done here
+
+       // int i;    // interface cant conatin fields
     }
-    public class Rectangle : Drawable
+    //class inherting an interface
+    public class Rectangle : Drawable 
     {
-        public void draw()
+        public void draw() //implementing method of interface and method signature must be same
         {
             Console.WriteLine("drawing rectangle...");
         }
@@ -35,11 +41,12 @@ namespace C_TutorialsConsoleApp
     {
         public static void Main()
         {
-            Drawable d;
-            d = new Rectangle();
+            //explicity interface calling
+            Drawable d = new Rectangle();
             d.draw();
-            d = new Circle();
-            d.draw();
+
+            Drawable d1 = new Circle();
+            d1.draw();
         }
 
     }

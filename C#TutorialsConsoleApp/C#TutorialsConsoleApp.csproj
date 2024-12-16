@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>C_TutorialsConsoleApp.Inheritance.BaseKeyword</StartupObject>
+    <StartupObject>C_TutorialsConsoleApp.Propertiies.Propperties</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,11 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClass.cs" />
-    <Compile Include="AccessModifier\AccessModifier1.cs" />
+    <Compile Include="AccessModifier\A_AccessModifier1.cs" />
+    <Compile Include="AccessModifier\B_AccessModifier.cs" />
     <Compile Include="Basics\ConditionalStatement.cs" />
     <Compile Include="Basics\DatatypeConversion.cs" />
     <Compile Include="Delegates\Delegatee.cs" />
+    <Compile Include="List\A_List.cs" />
+    <Compile Include="Enums\Enum.cs" />
     <Compile Include="ExceptionHandling\TryCatch.cs" />
+    <Compile Include="Generics\Generic.cs" />
     <Compile Include="Inheritance\BaseKeyword.cs" />
     <Compile Include="Inheritance\Inherit.cs" />
     <Compile Include="Inheritance\MethodHiding.cs" />
@@ -63,6 +67,9 @@
     <Compile Include="Class\StaticandInstance.cs" />
     <Compile Include="Intro.cs" />
     <Compile Include="Basics\DataTypes.cs" />
+    <Compile Include="PartialClasses\PartialClassDemo.cs" />
+    <Compile Include="PartialClasses\PartialClassDemoTwo.cs" />
+    <Compile Include="PartialClasses\ParticalClassDemoOne.cs" />
     <Compile Include="Polymorphism\MethodOverloading.cs" />
     <Compile Include="Polymorphism\Polymorphism1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
